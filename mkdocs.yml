@@ -1,0 +1,8 @@
+site_name: PySpark Datalakes Demo
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Delta: delta.md
+  - Iceberg: iceberg.md

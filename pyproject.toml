@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pyspark-datalakes-project"
+version = "0.1.0"
+description = "Demo PySpark + Delta Lake + Apache Iceberg with JupyterLab and MkDocs"
+authors = ["Seu Nome <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyspark = "^3.4.1"
+jupyterlab = "^4.0.0"
+delta-spark = "^2.2.0"
+pyiceberg = "^0.13.0"
+pandas = "^2.0"
+pyyaml = "^6.0"
+
+[tool.poetry.dev-dependencies]
+mkdocs = "^1.5.0"
+mkdocs-material = "^9.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
