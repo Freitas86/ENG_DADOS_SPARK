@@ -35,3 +35,9 @@ Clone o repositório:
 ## Inicie o JupyterLab
 - jupyter lab
 
+---
+
+## Para rodar a documentação localmente:
+- mkdocs serve
+- Acesse em http://localhost:8000
+
