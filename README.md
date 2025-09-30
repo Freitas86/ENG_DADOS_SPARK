@@ -20,18 +20,18 @@ Este projeto demonstra como configurar um ambiente de **engenharia de dados** ut
 
 ## Instalação do Ambiente
 Clone o repositório:
--bash
--git clone https://github.com/Freitas86/ENG_DADOS_SPARK.git
--cd ENG_DADOS_SPARK
+- bash
+- git clone https://github.com/Freitas86/ENG_DADOS_SPARK.git
+- cd ENG_DADOS_SPARK
 
 ---
 
 ## Instale as dependencias
--poetry install
--poetry shell
+- poetry install
+- poetry shell
 
 ---
 
 ## Inicie o JupyterLab
--jupyter lab
+- jupyter lab
 
