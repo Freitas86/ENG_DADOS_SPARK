@@ -1,8 +1,23 @@
-site_name: PySpark Datalakes Demo
+site_name: PySpark Datalakes Project
+site_description: Documentação do ambiente PySpark com Delta Lake e Apache Iceberg
+site_author: Gustavo de Freitas
+
 theme:
   name: material
+  features:
+    - navigation.expand
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
 
 nav:
-  - Home: index.md
-  - Delta: delta.md
-  - Iceberg: iceberg.md
+  - Início: index.md
+  - Delta Lake:
+      - Introdução: delta.md
+      - Exemplos de Uso: notebooks/02_load_and_create_tables.ipynb
+  - Apache Iceberg:
+      - Introdução: iceberg.md
+  - Configuração:
+      - Ambiente: notebooks/01_setup.ipynb
