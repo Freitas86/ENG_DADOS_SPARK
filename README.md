@@ -1,43 +1,54 @@
-#PySpark Datalakes Project
+# ENG_DADOS_SPARK
 
-Este projeto demonstra como configurar um ambiente de **engenharia de dados** utilizando:
-
-- [Apache Spark](https://spark.apache.org/) (PySpark)
-- [Delta Lake](https://delta.io/)
-- [Apache Iceberg](https://iceberg.apache.org/)
-- [JupyterLab](https://jupyter.org/)
-- [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) para documentação
+Este repositório contém um ambiente de estudo e prática com **Python**, **Poetry** e **JupyterLab** no **WSL (Windows Subsystem for Linux)**.  
+Abaixo seguem os comandos necessários para configurar e executar o projeto.
 
 ---
 
-## Requisitos
+## 🔧 Instalação do Python no WSL
 
-- Python **3.10+**
-- [Poetry](https://python-poetry.org/) para gerenciamento de dependências
-- Docker (opcional, mas recomendado para ambiente isolado)
-
----
-
-## Instalação do Ambiente
-Clone o repositório:
-- bash
-- git clone https://github.com/Freitas86/ENG_DADOS_SPARK.git
-- cd ENG_DADOS_SPARK
+```bash
+sudo apt update
+sudo apt upgrade
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.10
+python3.10 --version
+```
 
 ---
 
-## Instale as dependencias
-- poetry install
-- poetry shell
+## ▶️ Comandos para rodar o projeto no WSL
+
+```bash
+# Clonar o repositório
+git clone https://github.com/Freitas86/ENG_DADOS_SPARK.git
+cd ENG_DADOS_SPARK
+
+# Instalar dependências básicas
+sudo apt install python3-pip
+sudo apt install python3-poetry
+
+# Ativar ambiente virtual com Poetry
+poetry shell
+
+# Instalar Jupyter
+sudo apt install jupyter-core
+pip install jupyterlab
+
+# Acessar os notebooks
+cd notebooks/
+jupyter lab
+```
+
+Depois de rodar o último comando, abra no navegador:  
+👉 [http://localhost:8888/lab](http://localhost:8888/lab)
 
 ---
 
-## Inicie o JupyterLab
-- jupyter lab
+## 📌 Observações
+
+- Certifique-se de que o **WSL** esteja atualizado.
+- Caso o `poetry shell` não funcione, verifique se o Poetry foi instalado corretamente (`poetry --version`).
+- Os notebooks estarão disponíveis na pasta `notebooks/`.
 
 ---
-
-## Para rodar a documentação localmente:
-- mkdocs serve
-- Acesse em http://localhost:8000
-
